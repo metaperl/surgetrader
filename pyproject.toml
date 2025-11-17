@@ -1,0 +1,19 @@
+[project]
+name = "surgetrader"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "argh>=0.31.3",
+    "ccxt>=4.5.19",
+    "configobj>=5.0.9",
+    "invoke>=2.2.1",
+    "marrow-mailer>=4.0.3",
+    "meld3>=2.0.1",
+    "objectpath>=0.6.1",
+    "pydal>=20251115.1",
+    "pyrogram>=2.0.106",
+    "python-dateutil>=2.9.0.post0",
+    "retry>=0.9.2",
+    "supycache>=0.3.0",
+]
