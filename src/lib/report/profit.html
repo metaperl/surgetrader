@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:meld="http://www.plope.com/software/meld3"
+      xmlns:bar="http://foo/bar">
+
+  <head>
+    <title meld:id="title">SurgeTrader</title>
+    <style type="text/css" media="screen">
+      <!--
+      td { font: 8pt Tahoma,Arial; }
+      //-->
+    </style>
+    <style type="text/css" media="print">
+      <!--
+      td { font: 7pt Tahoma,Arial; }
+      //-->
+    </style>
+  </head>
+
+  <body topmargin=1 marginheight=1>
+    <font face="tahoma,arial" size=1>
+      <div align=center>
+
+        <h1>SurgeTrader</h1>
+
+        <table>
+          <tr>
+            <td colspan=2>Account: <b meld:id="acctno">231360</b></td>
+            <td meld:id="name" colspan=6>Name: <b>Billy Ray</b></td>
+            <td colspan=3>&nbsp;</td>
+            <td meld:id="date" colspan=2 align=right>2017 October 16, 23:59</td>
+          </tr>
+        </table>
+
+        <h2>Closed Transactions</h2>
+
+        <table cellspacing=1 cellpadding=3 border=0>
+
+          <tr align=center bgcolor="#C0C0C0">
+            <td>&nbsp;</td>
+            <td nowrap>Sell Close</td>
+            <td nowrap>Buy Opened</td>
+            <td>Market</td>
+            <td>Units Sold</td>
+            <td>Sell Price</td>
+            <td nowrap>Sell Commission</td>
+            <td>Buy Price</td>
+            <td>Buy Commission</td>
+            <td>Trade P/L</td>
+          </tr>
+
+          <tr meld:id="closed_orders" align=right>
+            <td>&nbsp;</td>
+            <td meld:id="sell_closed" nowrap>Sell Close</td>
+            <td meld:id='buy_opened'>Buy Opened</td>
+            <td meld:id='market'>Market</td>
+            <td meld:id='units_sold'>Units Sold</td>
+            <td meld:id='sell_price'>Sell Price</td>
+            <td meld:id='sell_commission' nowrap>Sell Commission</td>
+            <td meld:id="buy_price">Buy Price</td>
+            <td meld:id="buy_commission">Buy Commission</td>
+            <td meld:id="profit">Trade P/L</td>
+          </tr>
+
+
+        </table>
+
+        <table cellspacing=1 cellpadding=3 border=0>
+
+          <tr style="color:white" meld:id="closed_orders_sample" align=right>
+            <td>&nbsp;</td>
+            <td meld:id="sell_closed2" nowrap>Sell Close</td>
+            <td meld:id='buy_opened2'>Sell Opened</td>
+            <td meld:id='market2'>Market</td>
+            <td meld:id='units_sold2'>Units Sold</td>
+            <td meld:id='sell_price2'>Sell Price</td>
+            <td meld:id='sell_commission2' nowrap>Sell Commission</td>
+            <td meld:id="buy_price2">Buy Price</td>
+            <td meld:id="buy_commission2">Buy Commission</td>
+            <td meld:id="profit2">Trade P/L</td>
+          </tr>
+
+          <tr align=right>
+            <td colspan=5>
+            </td>
+            <td>
+              Closed Trade P&amp;L:
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <b meld:id="pnl">
+                4 million
+              </b>
+            </td>
+          </tr>
+        </table>
+
+        <a meld:id="ad_href" href="https://www.reddit.com/r/surgetraderbot/">
+            <img meld:id="ad_banner" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Transparent.gif" />
+        </a>
+
+        <h2>Open Transactions</h2>
+        <table cellspacing=1 cellpadding=3 border=0>
+
+          <tr align=center bgcolor="#C0C0C0">
+            <td>&nbsp;</td>
+            <td nowrap>Sell Close</td>
+            <td nowrap>Buy Opened</td>
+            <td>Market</td>
+            <td>Units Sold</td>
+            <td>%Profit</td>
+            <td nowrap>Best Bid</td>
+            <td>Buy Price</td>
+            <td>Buy Commission</td>
+            <td>Trade P/L</td>
+          </tr>
+
+          <tr meld:id="open_orders" align=right>
+            <td meld:id="sell_number3">&nbsp;</td>
+            <td meld:id="sell_closed3" nowrap>Sell Close</td>
+            <td meld:id='buy_opened3'>Sell Opened</td>
+            <td meld:id='market3'>Market</td>
+            <td meld:id='units_sold3'>Units Sold</td>
+            <td meld:id='difference3'>Sell Price</td>
+            <td meld:id='best_bid3' nowrap>Sell Commission</td>
+            <td meld:id="buy_price3">Buy Price</td>
+            <td meld:id="buy_commission3">Buy Commission</td>
+            <td meld:id="profit3">Trade P/L</td>
+          </tr>
+
+        </table>
+
+        <h2>User Settings</h2>
+
+        <table>
+          <tr>
+            <td>
+              Capital available for trading:
+            </td>
+            <td>
+              <b meld:id="available">300</b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Capital locked in open transactions:
+            </td>
+            <td>
+              <b meld:id="locked">300</b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Total operating Capital:
+            </td>
+            <td>
+            <b meld:id="operating">300</b>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Seed capital deposited:
+            </td>
+            <td>
+            <b meld:id="deposit">300</b>BTC
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Base capital allocated to each trade:
+            </td>
+            <td>
+              <b meld:id="trade_amt">x</b>BTC ==
+              <b meld:id="trade">300</b>%
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Profit target for each trade:
+            </td>
+            <td>
+            <b meld:id="takeprofit">300</b>%
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Halt buying when balance is below
+            </td>
+            <td>
+            <b meld:id="preserve">300</b>BTC
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Number of surging coins to buy each time interval:
+            </td>
+            <td>
+            <b meld:id="top">1</b>
+            </td>
+          </tr>
+        </ul>
+
+
+          <font face="tahoma,arial" size=1><div style="font: 7pt tahoma,arial">
+
+              Withdraw your profit daily or increment the preserve
+              parameter so your profits are not traded.
+            </div></font>
+
+        </div></font>
+    </body></html>

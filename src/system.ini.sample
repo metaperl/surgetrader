@@ -1,0 +1,50 @@
+[email]
+# A daily profit report is emailed when one invokes
+# shell> invoke profitreport -d yesterday
+# The sender of the email is configured here
+# In other words, if you are running SurgeTraderBot on a server called
+# bigprofits.com and you login to bigprofits.com as trader, then
+# sender should be trader@bigprofits.com
+sender = clientservices@MYDOMAIN.com
+
+# All profit reports are sent to the sysadmin so he is aware of the
+# profit of all people using the system
+# In many cases this could be the same email as above
+bcc = profitreports@MYDOMAIN.com
+
+
+[users]
+
+# SurgeTraderBot is capable of trading for multiple users.
+# Each user has an ini file in the src/users directory
+# We list them all here, space-separated
+inis = my.ini myfriend.ini myfatpocketclient.ini
+
+[trade]
+
+# Number of open sell orders we can have per market
+per_market = 1
+
+# A coin must cost 0.00000100 or MORE for us to calculate a percentage profit
+# Let's pay it safe and only buy/sell coins costing 110 sats
+min_price = 0.00000110
+
+# If a coin does not have adequate liquidity, do not trade it.
+# 10 BTC is 24 hrs is reasonable. Adjust to taste.
+min_volume = 10
+
+# If a coin has not made a change of X% BTC in the last hour, do not consider it.
+# A 5% surge is necessary.
+min_gain = 5
+
+
+[ignore]
+
+# We only trade the BTC-based markets. Not the ETH or USDT ones
+market = ETH USDT
+
+# Certain markets we stay from because of various reasons:
+# - we know it is about to be delisted
+# - we know the coin is headed to the graveyard
+# - we dont like the fundamentals
+coin = BURST UNO START UNB

@@ -1,0 +1,4 @@
+[parsers]
+WallStreetCrypto       = jim-binance-steadyvest.ini
+WallStreetTraderSchool = jim-binance-steadyvest.bluechip.ini
+TradingCryptoCoach     = jim-bittrex-steadyvest.ini

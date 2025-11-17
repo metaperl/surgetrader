@@ -1,0 +1,8 @@
+/home/schemelab/prg/surgetrader/src/log/app.log {
+daily
+missingok
+rotate 53
+compress
+delaycompress
+notifempty
+}

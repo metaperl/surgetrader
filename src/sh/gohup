@@ -1,0 +1,2 @@
+nohup invoke telegramclient -t MiningHamster terrence-kucoin.ini >> tmp/MiningHamster-`date "+%F"`.out &
+pgrep -f telegram
